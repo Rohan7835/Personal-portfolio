@@ -1,0 +1,31 @@
+.custom-button {
+  padding: 4px 30px;
+  border-radius: 4px;
+  font-weight: 400;
+  /* letter-spacing: 1px; */
+  /* word-spacing: 1px; */
+  background: white;
+  margin: 6px;
+  border: 1.8px solid #1b1b1b;
+}
+.custom-button:hover {
+  animation: float ease-in 0.2s forwards;
+}
+button {
+  font-size: 14px;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 3px 3px 5px rgb(197, 197, 197);
+  }
+}
+
+.custom-button.dark {
+  background: #1b1b1b;
+  color: white;
+}

@@ -1,0 +1,16 @@
+.logo {
+  cursor: pointer;
+}
+.logo .nav-link {
+  border: none !important;
+}
+.logo img {
+  max-height: 100px;
+}
+
+.nav-link {
+  margin: 5px 15px;
+}
+.nav-link.active {
+  border-bottom: 2px solid black;
+}
