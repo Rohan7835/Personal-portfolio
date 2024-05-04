@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Button } from "../Common/Buttons";
+import { Button } from "../Common/Button/Buttons";
 import "./Home.css";
 
 export default function Home() {
@@ -20,48 +20,50 @@ export default function Home() {
   };
 
   return (
-    <div
-      className="d-flex justify-content-between align-items-center flex-column pt-5 home-card"
-      onMouseMove={(e) => changeCursor(e)}
-    >
-      <span className="lead bold cursor-lg p-3">
-        <strong>👋, my name is Rohan and I am a Web Developer</strong>
-      </span>{" "}
-      <div className="my-1 animation-fonts  cursor-lg">
-        <div
-          className="font-lg dark-font"
-          onMouseOver={(e) => textEnchanceOnHover(e)}
-        >
-          WebDesigner
-        </div>
-        <div
-          className="font-lg ms-4"
-          onMouseOver={(e) => textEnchanceOnHover(e)}
-        >
-          & Developer
-        </div>
-        {/* <div className="profile-pic">
+    <>
+      <div
+        className="d-flex justify-content-between align-items-center flex-column pt-5 home-card"
+        onMouseMove={(e) => changeCursor(e)}
+      >
+        <span className="lead bold cursor-lg p-3">
+          <strong>👋, my name is Rohan and I am a Web Developer</strong>
+        </span>{" "}
+        <div className="my-1 animation-fonts  cursor-lg">
+          <div
+            className="font-lg dark-font"
+            onMouseOver={(e) => textEnchanceOnHover(e)}
+          >
+            WebDesigner
+          </div>
+          <div
+            className="font-lg ms-4"
+            onMouseOver={(e) => textEnchanceOnHover(e)}
+          >
+            & Developer
+          </div>
+          {/* <div className="profile-pic">
           <img src="/imgs/profile.png" alt="" />
         </div> */}
-      </div>
-      <div className="mt-5 pt-5 cursor-lg">
-        <Button
-          onClick={() => console.log("hei")}
-          theme="light"
-          text="You need a designer"
-          className="cursor-none"
+        </div>
+        <div className="mt-5 pt-5 cursor-lg">
+          <Button
+            onClick={() => console.log("hei")}
+            theme="light"
+            text="You need a designer"
+            className="cursor-none"
           />
-        <Button
-          theme="dark"
-          text="You need a developer"
-          className="cursor-none"
-          onClick={() => console.log("hei")}
-        />
+          <Button
+            theme="dark"
+            text="You need a developer"
+            className="cursor-none"
+            onClick={() => console.log("hei")}
+          />
+        </div>
+        <div
+          className="cursor"
+          style={{ left: cursorPos.x, top: cursorPos.y }}
+        ></div>
       </div>
-      <div
-        className="cursor"
-        style={{ left: cursorPos.x, top: cursorPos.y }}
-      ></div>
-    </div>
+    </>
   );
 }
