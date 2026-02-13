@@ -12,7 +12,7 @@ export default function Home() {
   };
 
   const textEnchanceOnHover = (
-    e: React.MouseEvent<HTMLDivElement, MouseEvent>
+    e: React.MouseEvent<HTMLDivElement, MouseEvent>,
   ) => {
     e.currentTarget.previousElementSibling?.classList.remove("dark-font");
     e.currentTarget.nextElementSibling?.classList.remove("dark-font");
@@ -26,7 +26,7 @@ export default function Home() {
         onMouseMove={(e) => changeCursor(e)}
       >
         <span className="lead bold cursor-lg p-3">
-          <strong>👋, my name is Rohan and I am a Web Developer</strong>
+          <strong>I know you dont like pink color but its Valentine's</strong>
         </span>{" "}
         <div className="my-1 animation-fonts  cursor-lg">
           <div

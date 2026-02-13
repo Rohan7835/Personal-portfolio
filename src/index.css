@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap");
 body {
   margin: 0;
   padding: 0;
-  background: black;
+  background: #f6bbcf !important;
+  color: #e3252f;
   box-sizing: border-box;
-  font-size: 14px !important;
+  font-family: "Loved by the King", cursive !important;
+  font-style: normal;
 }

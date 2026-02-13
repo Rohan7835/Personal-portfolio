@@ -25,14 +25,29 @@
 }
 .cursor {
   position: fixed;
-  border: 4px solid #1b1b1b;
-  width: 50px;
-  height: 50px;
-  background: transparent;
+  width: 30px;
+  height: 30px;
+  background: red;
+  transform: rotate(-45deg);
+}
+
+.cursor::before,
+.cursor::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: red;
   border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%) scale(1);
-  transition: all 0.1s linear;
+}
+
+.cursor::before {
+  top: -15px;
+  left: 0;
+}
+.cursor::after {
+  left: 15px;
+  top: 0;
 }
 @keyframes fadein {
   from {
@@ -59,16 +74,6 @@
   height: 200px;
   width: 200px;
 } */
-.cursor-lg:hover ~ .cursor {
-  transform: translate(-50%, -50%) scale(1.5);
-  /* filter: blur(40px); */
-  background: black;
-  border: 4px solid black;
-
-  mix-blend-mode: difference;
-  filter: invert(100%);
-}
-
 .cursor-none {
   cursor: none !important;
 }
